@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+html{
+    font-size: 18px;
+    font-family: "Open Sans";    
+}
+p{
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+h2,h1{
+    margin-bottom: 10px;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid:"hero hero hero hero"
+         "about about about about"
+         "about about about about"  
+         "about about about about"   
+         "footer footer footer footer";      
+}
+.hero{
+    background: url(../images/bg-hero-desktop.svg) center center no-repeat;
+    background-color: hsl(193, 100%, 96%);
+    background-size:cover ;
+    font-family: "Poppins";
+    font-weight: 600;
+    grid-area: hero;
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+    grid: "top top top top"
+            "content-hero content-hero content-hero content-hero"; 
+}
+.content-hero{
+    grid-area: "content-hero";
+    display: flex;       
+    margin: 5%;
+}
+.hero p{
+    color:hsl(192, 100%, 9%);
+}
+.top{
+    grid-area: top;
+    display: flex;    
+    justify-content: space-between;
+    margin: 2%;      
+    max-width: 93%;
+}
+.logo-top{
+    width: 50%;
+    margin-left: 20%;   
+}
+.button-top{
+    font-size: 12px;
+    border-radius: 40px;
+    padding: 8px;
+    width: 150px;
+    color:hsl(192, 100%, 9%);
+    background-color: white;    
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);    
+}
+.button-top:hover{
+    color:hsl(192, 47%, 36%);
+    cursor: pointer;
+}
+.bt-hero{
+    background: hsl(322, 100%, 66%);
+    width: 300px;
+    color:white;
+    padding: 18px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.bt-hero:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.image-hero{
+    width: 50%;  
+}
+.about{
+    grid-area: about;
+    display: grid;   
+    gap:30px;
+    margin: 5%;
+    border-radius: 10px;    
+    box-shadow:0.1px 0.1px 10px hsl(193, 100%, 96%);
+    margin-bottom: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid:"grow grow image1 image1"
+          "image2 image2 flowing flowing"  
+          "users users image3 image3";          
+}
+
+.text{      
+    padding: 20px;     
+    margin: 0 auto;    
+}
+.grow{
+    grid-area: grow;
+    margin: 10%;        
+}
+.flowing{
+    grid-area: flowing;
+    margin: 15%;     
+}
+.users{
+    grid-area: users;   
+    margin: 15%;      
+}
+.img{ 
+  max-width: 70%;
+  width: 100%;
+  margin-left: 15%; 
+  
+}
+.image1{
+    grid-area: image1;     
+}
+.image2{
+    grid-area: image2;
+}
+.image3{
+    grid-area: image3;    
+}
+.footer{
+    grid-area: footer;
+}
+.footer{    
+    display: grid;
+    position: relative;
+    font-size: 13px;  
+    gap:40px;  
+    grid-template-columns: repeat(3, 1fr); 
+    background: hsl(192, 100%, 9%);    
+    padding: 60px;     
+}
+.im{
+    width: 20px;
+    height: 19px;
+}
+.footer p {
+    color:white;
+}
+.img-footer{
+    width: 200px;
+    margin: 10px;
+}
+.loc{
+    display: flex;
+    gap:20px;
+    padding: 10px;    
+}
+.tel{
+    padding: 10px;
+    display: flex;
+    gap: 20px;  
+}
+.email{
+    padding: 10px;
+    display: flex;
+    gap: 20px;  
+}
+.footer-mid{
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+    padding: 30px;
+    gap:90px;   
+}
+.footer-mid li{
+    margin: 10px;    
+}
+.footer-mid li:hover{
+    text-decoration: underline;
+}
+.footer-right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    justify-content: space-between;   
+    margin-left: 70px;  
+}
+.social{
+    margin-top: 100px;
+}
+.social a i{
+    border:1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;    
+}
+.social a i:hover{
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
+.float{
+    background: white;
+    position: absolute;
+    top:-90px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+    justify-self: center;
+}
