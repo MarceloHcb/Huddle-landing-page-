@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 html{
     font-size: 18px;
     font-family: "Open Sans";    
@@ -190,7 +191,9 @@ body{
     border:1px solid white;
     border-radius: 50%;
     padding: 10px;
-    margin: 5px;    
+    margin: 5px;   
+    width: 35px; 
+    font-size: 15px;
 }
 .social a i:hover{
     color: hsl(322, 100%, 66%);

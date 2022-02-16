@@ -33,7 +33,7 @@
    .footer{
        gap:0;
        grid-template-columns: 1fr;
-       grid-template-rows: repeat(3, 1fr);
+       grid-template-rows: repeat(2, 1fr);
    }
    .footer-left{
        margin-top: 100px;
@@ -58,4 +58,19 @@
        margin-top: 0;  
        margin-bottom: 3%;   
    } 
+}
+@media(max-width: 500px){ 
+    .float{
+       
+        position: absolute;
+        top:-90px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        align-items: center;
+        justify-self: center;
+    }
 }
